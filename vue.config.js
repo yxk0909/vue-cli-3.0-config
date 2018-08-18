@@ -1,5 +1,10 @@
 const path = require('path');
 
+/**
+ * 拼接相对于当前目录的下 文件的相对路径
+ * @param dir 目录
+ * @return {string}
+ */
 function resolove(dir) {
   return path.join(__dirname, dir)
 }
