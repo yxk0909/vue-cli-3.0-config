@@ -19,3 +19,9 @@ npm run build
 ```
 npm run lint
 ```
+
+```
+package.json   在这里配置 ESLint 规则
+vue.config.js  vue-cli 配置
+.env           全局环境变量
+```
