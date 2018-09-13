@@ -16,7 +16,7 @@ function resolove(dir) {
  * @return {string}
  */
 const templateFn = function(data) {
-  let perSprite = data.sprites.map(sprite => {
+  return data.sprites.map(sprite => {
     return '.w-icon-N {\n  width: Wpx;\n  height: Hpx;\n  background-image: url(I);\n  background-position: Xpx Ypx;\n}'
       .replace('N', sprite.name)
       .replace('W', sprite.width)
@@ -25,7 +25,6 @@ const templateFn = function(data) {
       .replace('Y', sprite.offset_y)
       .replace('I', sprite.image);
   }).join('\n');
-  return perSprite;
 };
 
 module.exports = {
@@ -76,7 +75,6 @@ module.exports = {
             }]
           ]
         },
-        //
         /**
          * 样式文件中调用雪碧图地址写法 默认是绝对路径会出现引用错误 这里使用相对路径
          */
