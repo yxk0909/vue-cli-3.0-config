@@ -1,7 +1,8 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <h1 class="w-icon-icon-chongzhi">This is an about page</h1>
     <img src="~IMG/logo.png" alt="">
+    <p>呵呵</p>
   </div>
 </template>
 
@@ -24,6 +25,11 @@ export default {
     h1 {
       color: $color;
       @include test();
+    }
+    p {
+      font-size: 16px;
+      width: 100px;
+      background: #ccc;
     }
   }
 </style>

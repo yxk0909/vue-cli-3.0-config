@@ -10,6 +10,7 @@
 
 <style lang="scss">
   @import "style/index";
+  @import "assets/sprites/sprite.css";
 
   #app {
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
