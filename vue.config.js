@@ -50,6 +50,10 @@ module.exports = {
       .set('COMPONENTS', resolove('src/components'));
   },
   configureWebpack: {
+    // build 构建时忽略 Vue 依赖包
+    externals: {
+      vue: 'Vue',
+    },
     plugins: [
       /**
        * 雪碧图插件配置
